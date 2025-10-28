@@ -109,3 +109,42 @@ body {
 }
 
 .btn-large { padding: 1.375em 3.4375em; }
+
+.btn-small { padding: 0.6875em 1.875em; }
+
+
+/* blog */
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .section__columns {
+        display: flex;
+    }
+    .section__title {
+        font: normal normal bold 2.1875em var(--primary-font);
+        letter-spacing: 0;
+        color: var(--black-color);
+        text-transform: uppercase;
+        margin-bottom: 2.1875rem;
+    }
+    .section__column--title {
+        font: normal normal normal 1.1875em var(--primary-font);
+        letter-spacing: 0;
+        color: var(--gray-color-100);
+        margin-top: 25px;
+        margin-bottom: 15px;
+
+    }
+    .section__column--subtitle {
+        font: normal normal 300 0.875em var(--secondary-font);
+        letter-spacing: 0;
+        color: var(--gray-color-100);
+        margin-right: 92px;
+        margin-bottom: 15px;
+    }
+/* e: blog */
