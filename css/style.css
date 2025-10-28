@@ -1,7 +1,6 @@
 * { box-sizing: border-box; }
 
 /* variables */
-
 :root {
     --white-color: #FFFFFF;
     --white-color-transparent-100: #FFFFFF33;
@@ -15,12 +14,11 @@
     --secondary-color: #FF0000;
     --secondary-color-transparent-100: #FF00004D;
     --primary-font: "Nunito Sans";
+    --secondary-font: "Open Sans";
 }
- /* e: variables */
+/* e: variables */
 
-body {
-    font-family: var(--primary-font), sans-serif;
-}
+body { font-family: var(--primary-font), sans-serif; font-size: 16px;}
 
 /* container */
 .container {
@@ -31,7 +29,7 @@ body {
 
 /* top-section */
 
-
+/* TODO!!! Add background, add hover and border, fix positioning */
 .top-section {
     display: flex;
     justify-content: space-between;
@@ -49,20 +47,23 @@ body {
     font-size: 2.1875em;
 }
 .top-section__logo span { color: var(--secondary-color);}
+
 .top-section__nav-list {
     display: flex;
     gap: 57px;
 }
-.top-section__nav-item a {
+.top-section__nav-item a, .footer-section__nav-item a {
     color: var(--white-color);
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1em;
     text-decoration: none;
 }
+
 /* e: top-section */
 
 /* header */
+/* TODO!!! add overlay and icon */
 
 .header {
     background-image: url(../images/image.png);
@@ -85,11 +86,12 @@ body {
     font: normal normal bold 1em var(--primary-font);
 }
 
+.btn-container { margin-top: 3.375em; }
+
 /* e: header */
 
-.btn-container {
-    margin-top: 3.375em;
-}
+/* buttons */
+
 .btn {
     border-radius: 30px;
     text-transform: uppercase;
@@ -109,9 +111,8 @@ body {
 }
 
 .btn-large { padding: 1.375em 3.4375em; }
-
 .btn-small { padding: 0.6875em 1.875em; }
-
+/* e: buttons */
 
 /* blog */
 
@@ -150,7 +151,6 @@ body {
     }
 /* e: blog */
 
-
 /* service */
     #service {
         background-color: var(--gray-color-200);
@@ -168,3 +168,37 @@ body {
         margin-right: 0;
     }
 /* e: service */
+
+
+/* footer */
+    .footer {
+        background-color: var(--gray-color-200);
+        min-height: 230px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .footer__logo {
+        margin-bottom: 20px;
+    }
+    .footer__section {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .footer__section-column {
+        display: flex;
+        gap: 140px;
+    }
+    .footer-section__nav-item {
+        margin-bottom: 5px;
+    }
+
+    .footer-section__nav-item a:hover {
+        color: var(--secondary-color);
+    }
+    .footer__copyright {
+        font: normal normal 300 0.75em var(--primary-font);
+        letter-spacing: 0;
+        color: var(--gray-color-400);
+    }
+/* e: footer */
