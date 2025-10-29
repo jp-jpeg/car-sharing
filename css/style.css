@@ -27,38 +27,57 @@
     }
 /* e: container */
 
+
 /* top-section */
 
-/* TODO!!! Add background, add hover and border, fix positioning */
-    .top-section {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        min-height: 88px;
-        background: var(--black-color); /* TODO */
-    }
-    .top-section__logo {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        color: var(--white-color);
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 2.1875em;
-    }
-    .top-section__logo span { color: var(--secondary-color);}
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 88px;
+    background: var(--black-color-transparent-100);
+    border-bottom: 2px solid var(--white-color-transparent-100);
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.top-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-section__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.1875em;
+}
+.top-section__logo span { color: var(--secondary-color);}
 
-    .top-section__nav-list {
-        display: flex;
-        gap: 57px;
-    }
-    .top-section__nav-item a, .footer-section__nav-item a {
-        color: var(--white-color);
-        text-transform: uppercase;
-        font-weight: 600;
-        font-size: 1em;
-        text-decoration: none;
-    }
+.top-section__nav-list {
+    display: flex;
+    gap: 57px;
+}
+.top-section__nav-item {
+    height: 86px;
+    width: 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-section__nav-item:hover {
+    background-color: var(--white-color-transparent-100);
+}
+.top-section__nav-item a, .footer-section__nav-item a {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1em;
+    text-decoration: none;
+}
 
 /* e: top-section */
 
